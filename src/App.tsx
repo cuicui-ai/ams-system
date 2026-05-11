@@ -39,11 +39,11 @@ const UnderConstruction = ({ name }: { name: string }) => (
 );
 
 export default function App() {
-  const [currentModule, setCurrentModule] = useState('总览');
+  const [currentModule, setCurrentModule] = useState('资产概览');
 
   const renderContent = () => {
     switch (currentModule) {
-      case '总览': return <Dashboard />;
+      case '资产概览': return <Dashboard />;
       case '组合报告': return <PortfolioReport />;
       case '资产配置': return <AssetAllocation />;
       case '头寸表': return <PositionReport />;

@@ -77,7 +77,7 @@ interface SidebarProps {
 export const Sidebar = ({ currentModule, onModuleChange }: SidebarProps) => {
   return (
     <aside className="w-64 bg-ams-primary h-screen flex flex-col border-r border-white/10 shrink-0 overflow-y-auto">
-      <div className="p-6 flex items-center gap-3 cursor-pointer" onClick={() => onModuleChange('总览')}>
+      <div className="p-6 flex items-center gap-3 cursor-pointer" onClick={() => onModuleChange('资产概览')}>
         <div className="w-8 h-8 bg-ams-accent rounded flex items-center justify-center">
           <TrendingUp className="text-white w-5 h-5" />
         </div>
@@ -92,9 +92,9 @@ export const Sidebar = ({ currentModule, onModuleChange }: SidebarProps) => {
           <p className="px-4 mb-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">核心功能</p>
           <NavItem 
             icon={LayoutDashboard} 
-            label="总览" 
-            active={currentModule === '总览'} 
-            onClick={() => onModuleChange('总览')} 
+            label="资产概览" 
+            active={currentModule === '资产概览'} 
+            onClick={() => onModuleChange('资产概览')} 
           />
           <NavItem 
             icon={PieChart} 
